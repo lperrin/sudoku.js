@@ -250,7 +250,7 @@ Sudoku.prototype.toString = function() {
   for(var y = 1; y <= SIZE; y++) {
     for(var x = 1; x <= SIZE; x++) {
       var cell = this.getCell(x, y);
-      s+= cell.solved ? cell.value : '*' + cell.values.join('') + nspace(10 - cell.values.length);
+      s+= cell.solved ? cell.value : '*';
     }
     s += '\n';
   }
