@@ -207,13 +207,6 @@ Sudoku.prototype.applyRules = function(cell) {
 };
 
 /**
- * Create an independant duplicate of the grid
- */
-Sudoku.prototype.clone = function() {
-  return new Sudoku(this.cells);
-};
-
-/**
  * The callback is called each time a solution is found.
  * Simple backtracking algorithm.
  */
@@ -250,13 +243,6 @@ Sudoku.prototype.solve = function(findAllSolutions, cb) {
     return newSudoku.solve(findAllSolutions, cb) && !findAllSolutions;
   });
 };
-
-function nspace(n) {
-  if(n === 0)
-    return '';
-  else
-    return ' ' + nspace(n-1);
-}
 
 Sudoku.prototype.toString = function() {
   var s = '';
