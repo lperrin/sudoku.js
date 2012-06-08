@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sudoku Solver</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sudoku.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="sudoku.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span4 controls">
+          <p>
+              <h1>Instructions</h1>
+            <ul>
+              <li>Hover over a cell and select a value to edit it.</li>
+              <li>Click on a value to erase it.</li>
+              <li><b>Solve</b> will attempt to complete the grid with a solution.
+              This demo only shows one possible solution.</li>
+              <li><b>Reset</b> to try a different grid.</li>
+            </ul>
+          </p>
+          <button class="btn btn-large btn-primary" id="solve">Solve</button>
+          <button class="btn btn-large" id="reset">Reset</button>
+        </div>
+        <div class="span8">
+          <div class="grid" id="sudoku"></div>
+        </div>
+      </div>
+  </body>
+</html>

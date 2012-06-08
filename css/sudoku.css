@@ -1,0 +1,74 @@
+body {
+  margin-top: 20px;
+}
+
+ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  width: 480px;
+  margin: 0 auto;
+}
+
+.grid td {
+  padding: 0;
+}
+
+.bloc {
+  border: 2px solid #333;
+  width: 186px;
+  height: 180px;
+}
+
+.cell {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
+.cell.fixed:hover {
+  color: #bd362f;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  word-wrap: break-word;
+  padding-top: 3px;
+}
+
+.overlay span {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.overlay span:hover {
+  color: #05c;
+}
+
+.cell.fixed {
+  font-weight: bold;
+}
+
+.cell.solved {
+  color: #999;
+}
+
+.controls {
+  margin: 0 auto;
+  width: 150px;
+}
